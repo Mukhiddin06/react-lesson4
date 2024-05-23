@@ -1,0 +1,117 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.table-wrapper,
+.card-wrapper {
+  flex: 1;
+  min-width: 300px;
+  margin: 10px;
+}
+
+.search-wrapper {
+  margin-bottom: 20px;
+}
+
+.search-btn {
+  max-width: 400px;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.table-user {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-user th,
+.table-user td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.table-user th {
+  background-color: #f4f4f4;
+}
+
+.btn-i {
+  background-color: transparent;
+  border: none;
+  color: #d9534f;
+  cursor: pointer;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card-header {
+  background-color: #f4f4f4;
+  padding: 10px;
+}
+
+.card-title {
+  margin: 0;
+}
+
+.card-body {
+  flex: 1;
+  padding: 10px;
+}
+
+.card-input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+.card-footer {
+  padding: 10px;
+  background-color: #f4f4f4;
+  text-align: right;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .table-wrapper,
+  .card-wrapper {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
